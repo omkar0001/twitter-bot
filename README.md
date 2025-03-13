@@ -28,4 +28,4 @@
    ```
    npx ts-node src/output_parser.ts
    ```
- The above command will generate a `tweets.json` file. That file will contain the tweets that most likely have the prediction.
+ - The above command will generate a `tweets.json` file. That file will contain the tweets that most likely have the prediction.
