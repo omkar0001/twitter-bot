@@ -12,20 +12,20 @@
   npm run start
   ```
 
-### Install chrome plugin.
+### Install the Chrome plugin.
 - Go to `chrome_extension/manifest.json`. Make sure the twitter profile you are gonna scrape is there in content_scripts.matches. Here in this case https://x.com/CryptoMichNL.
-- Install chrome plugin by following below steps.
-  - In chrome browser. Navigate to chrome://extensions
+- Install the Chrome plugin by following the below steps.
+  - In Chrome browser. Navigate to chrome://extensions
   - Click on load unpacked and select the `chrome_extension` folder.
 
  ### Scraping.
- - Navigate to the twitter profile. In this case, its https://x.com/CryptoMichNL
+ - Navigate to the Twitter profile. In this case, its https://x.com/CryptoMichNL
  - Keep the tab open. It will keep scrolling. Close the tab when you want to stop.
- - To see if its working. Check if `output.txt` file exists.
+ - To check if it's working. Check if `output.txt` got created. It contains the HMLT content of the tweets until now, which has been scraped.
 
  ### Parsing the output file.
  - Run the output_parser.ts
    ```
    npx ts-node src/output_parser.ts
    ```
- - The above file will generate tweets json file. That will contain the tweets that would most probably would have the prediction.
+ The above command will generate a `tweets.json` file. That file will contain the tweets that most likely have the prediction.
